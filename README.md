@@ -27,11 +27,10 @@ NinjaTrader account
 ---  
 
 **Control Center > Strategy Builder**  
-From the control center, navigate to the [Strategy Builder](#).
-![NinjaTrader 8 Loading Image](_assests/imgs/img-0001__ntrader-Lol.png)  
+From the control center, navigate to the [Strategy Builder](#).  
+![NinjaTrader 8 Loading Image](_assests/imgs/img-0002__control-center.png)  
 
-The [Strategy Builder](#) wizard will load.
-![NinjaTrader 8 Loading Image](_assests/imgs/img-0001__ntrader-Lol.png) 
+The [Strategy Builder](#) wizard will load.  
 
 --- 
 
@@ -44,14 +43,21 @@ This wizard guides you though the steps of creating a new strategy.
 * Conditions and Actions -  
 * Stops and Targets -  
 * Finish -  
-![NinjaTrader 8 Loading Image](_assests/imgs/img-0001__ntrader-Lol.png)  
+![NinjaTrader 8 Loading Image](_assests/imgs/img-0003__strategy-builder.png)  
 Click "Next"
 
 ---  
 
-**General**  
+**General: Strategy Name & Description**  
 Enter a name and description for your custom strategy.  
 **Name**: 'DemoGoldenCrossStrategy'  
-**Description**: 'This demo is brought to you by the good human beings over @ Corta Bear. Visit us online @ www.cortabear.com'
+**Description**: 'This demo is brought to you by the good human beings over @ Corta Bear. Visit us online @ www.cortabear.com'  
+![NinjaTrader 8 Loading Image](_assests/imgs/img-0003__strategy-name.png)  
+Click "Unlock Code"
+
+---  
+
+**Unlocking Code**  
+"After unlocking, you can manually edit the wizard generated code. However, you will no longer be able to configure the strategy with the wizard. Do you want to proceed?" Click "Yes"  
 ![NinjaTrader 8 Loading Image](_assests/imgs/img-0001__ntrader-Lol.png)  
 Click "Unlock Code"
