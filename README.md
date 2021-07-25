@@ -2,12 +2,18 @@
 The Golden Cross Strategy Demo  
 In this demo we will walk through the creation of the infamous '[Golden Cross Strategy](https://etfdb.com/etf-education/3-simple-moving-average-etf-trading-strategies/)' trading strategy using NinjaTrader 8.  
 
+**pseudo-code**  
 > IF the simple moving average (SMA) of the 'investment' in a 10 period timespan just moved up and crossed over the simple moving average (SMA) of the 20 period timespan THEN BUY the 'investment'. Set a stop loss at 10% loss and a profit target of 20%.  
 
 
 ## Table Of Conents  
 1. [Getting Started](#)  
 1. [Generating A Class](#)
+
+### Resources  
+1. [NinjaTrader Support Documentation](https://ninjatrader.com/support/helpGuides/nt8/)
+
+---
 
 ## Getting Started 
 1. [Prereq](#)  
@@ -98,6 +104,17 @@ Whenever this strategy is loaded
 
 **OnBarUpdate()**  
 Whenever ever the candle closes.  
+
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
+
+---  
+ 
+
+**Set Stop Loss Method**  
+We will start by defining the stop loss and profit target. At the time of this writting we choose to execute these in the 
+```C#
+```
+
 
 [Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
 
