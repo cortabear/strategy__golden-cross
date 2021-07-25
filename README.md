@@ -1,6 +1,9 @@
 # Strategy : The Golden Cross
 The Golden Cross Strategy Demo  
-In this demo we will walk through the creation of the infamous 'Golden Cross Strategy' trading strategy using NinjaTrader 8.  
+In this demo we will walk through the creation of the infamous '[Golden Cross Strategy](https://etfdb.com/etf-education/3-simple-moving-average-etf-trading-strategies/)' trading strategy using NinjaTrader 8.  
+
+> IF the simple moving average (SMA) of the 'investment' in a 10 period timespan just moved up and crossed over the simple moving average (SMA) of the 20 period timespan THEN BUY the 'investment'. Set a stop loss at 10% loss and a profit target of 20%.  
+
 
 ## Table Of Conents  
 1. [Getting Started](#)  
@@ -80,7 +83,7 @@ Click "Unlock Code"
 
 **NinjaScript Editor**  
 We now have a C# Class that provides us a template for a strategy.
-![NinjaTrader 8 Loading Image](_assests/imgs/img-0004__unlock-code.png)  
+![NinjaTrader 8 Loading Image](_assests/imgs/img-0005__ninja-script-editor.png)  
 
 **Declarations**  
 As with all C# files there are a series of declarations at the top of the file.
