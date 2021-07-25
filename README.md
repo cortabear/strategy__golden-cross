@@ -1,2 +1,2 @@
-# strategy__golden-cross
+# Strategy : The Golden Cross
 The Golden Cross Strategy Demo
