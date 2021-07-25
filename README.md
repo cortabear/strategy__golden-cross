@@ -7,8 +7,8 @@ In this demo we will walk through the creation of the infamous '[Golden Cross St
 
 
 ## Table Of Conents  
-1. [Getting Started](#)  
-1. [Generating A Class](#)
+1. [Getting Started](#getting-started)  
+1. [Generating A Class](#generating-a-class)
 
 ### Resources  
 1. [NinjaTrader Support Documentation](https://ninjatrader.com/support/helpGuides/nt8/)
