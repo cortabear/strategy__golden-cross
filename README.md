@@ -1,6 +1,6 @@
 # Strategy : The Golden Cross
 The Golden Cross Strategy Demo  
-In this demo we will walk through the creation of a trading strategy using NinjaTrader 8.  
+In this demo we will walk through the creation of the infamous 'Golden Cross Strategy' trading strategy using NinjaTrader 8.  
 
 ## Table Of Conents  
 1. [Getting Started](#)  
@@ -15,7 +15,7 @@ In this demo we will walk through the creation of a trading strategy using Ninja
 **VS Code**  
 Any solid IDE would suffice but we would recommend using Microsoft's VS Code editor for MAC, PC.  
 
-
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)
 
 NinjaTrader 8 downloaded and installed and hooked up to live data 
 NinjaTrader account 
@@ -23,6 +23,8 @@ NinjaTrader account
 ## Generating A Class  
 **Launch NinjaTrader 8**  
 ![NinjaTrader 8 Loading Image](_assests/imgs/img-0001__ntrader-Lol.png)  
+
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
 
 ---  
 
@@ -32,7 +34,10 @@ From the control center, navigate to the [Strategy Builder](#).
 
 The [Strategy Builder](#) wizard will load.  
 
---- 
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
+
+---  
+
 
 **Create a new Strategy**  
 This wizard guides you though the steps of creating a new strategy.  
@@ -46,7 +51,10 @@ This wizard guides you though the steps of creating a new strategy.
 ![NinjaTrader 8 Loading Image](_assests/imgs/img-0003__strategy-builder.png)  
 Click "Next"
 
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
+
 ---  
+ 
 
 **General: Strategy Name & Description**  
 Enter a name and description for your custom strategy.  
@@ -55,9 +63,39 @@ Enter a name and description for your custom strategy.
 ![NinjaTrader 8 Loading Image](_assests/imgs/img-0003__strategy-name.png)  
 Click "Unlock Code"
 
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
+
 ---  
+ 
 
 **Unlocking Code**  
 "After unlocking, you can manually edit the wizard generated code. However, you will no longer be able to configure the strategy with the wizard. Do you want to proceed?" Click "Yes"  
-![NinjaTrader 8 Loading Image](_assests/imgs/img-0001__ntrader-Lol.png)  
+![NinjaTrader 8 Loading Image](_assests/imgs/img-0004__unlock-code.png)  
 Click "Unlock Code"
+
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
+
+---  
+ 
+
+**NinjaScript Editor**  
+We now have a C# Class that provides us a template for a strategy.
+![NinjaTrader 8 Loading Image](_assests/imgs/img-0004__unlock-code.png)  
+
+**Declarations**  
+As with all C# files there are a series of declarations at the top of the file.
+
+The class that has been created inherits from 'Strategy'. 'Strategy' comes from a 'NinjaTrader.Strategy.Strategy' DLL.
+
+**Stadard Variables & Methods**  
+Every strategy comes with a default set of variables and methods.
+
+**Initialize()**  
+Whenever this strategy is loaded
+
+**OnBarUpdate()**  
+Whenever ever the candle closes.  
+
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
+
+---  
