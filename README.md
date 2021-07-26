@@ -195,6 +195,22 @@ See more about the '**Enter Long**' parameter in the NinjaTrader documentation. 
 
 [Go Back To The Table Of Contents...](#strategy--the-golden-cross) 
 
+---  
+ 
+### Compile The Strategy  
+The easiest way to compile the strategy in NinjaTrader 8 is to click 'F5'. Should trigger a debug dialog window.
+
+```C#  
+// ...
+
+Code Goes Here
+
+// ...
+```
+See more about the '**Moving Average - Simple (SMA)**' calculation in the NinjaTrader documentation. Visit [Simple (SMA)](https://ninjatrader.com/support/helpGuides/nt8/moving_average_-_simple_sma.htm).
+
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross) 
+
 --- 
 
 ## Resources  
