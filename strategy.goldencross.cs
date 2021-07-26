@@ -1,3 +1,8 @@
+/*
+'THE GOLDEN CROSS' Strategy
+This demo is brought to you by the good human beings over @ Corta Bear. Visit us online @ www.cortabear.com
+*/
+
 #region Using declarations
 using System;
 using System.Collections.Generic;
