@@ -68,7 +68,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 				- SetStopLoss( CalculationMode mode, double value )
 				- SetProfitTarget( CalculationMode mode, double value )
 				*/
-				SetStopLoss( CalculationMode.Percent, .3 );
+				SetStopLoss( CalculationMode.Percent, .1 );
 				SetProfitTarget( CalculationMode.Percent, .2 );
 
 			}
@@ -76,7 +76,16 @@ namespace NinjaTrader.NinjaScript.Strategies
 
 		protected override void OnBarUpdate()
 		{
-			//Add your custom strategy logic here.
+			/*
+			SIMPLE MOVING AVERAGE (SMA)
+			*/
+			var sma10 = SMA(10);
+			var sma20 = SMA(20);
+
+			// Cross Above?
+			if( CrossAbove(sma10, sma20, 1 )){
+				EnterLog(); // 
+			}
 		}
 	}
 }
