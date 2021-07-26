@@ -183,7 +183,7 @@ NinjaScript provides a number of methods and properties useful for analyzing and
 
         // Cross Above?
         if( CrossAbove(sma10, sma20, 1 )){
-            EnterLog(); // 
+            EnterLong(); // 
         }
     }
 

@@ -84,7 +84,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 
 			// Cross Above?
 			if( CrossAbove(sma10, sma20, 1 )){
-				EnterLog(); // 
+				EnterLong(); // 
 			}
 		}
 	}
