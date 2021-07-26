@@ -59,6 +59,18 @@ namespace NinjaTrader.NinjaScript.Strategies
 			}
 			else if (State == State.Configure)
 			{
+
+				/*
+				STOP LOSS  
+				Setting the stop loss for positions globally.
+
+				Syntax
+				- SetStopLoss( CalculationMode mode, double value )
+				- SetProfitTarget( CalculationMode mode, double value )
+				*/
+				SetStopLoss( CalculationMode.Percent, .3 );
+				SetProfitTarget( CalculationMode.Percent, .2 );
+
 			}
 		}
 

@@ -5,6 +5,8 @@ In this demo we will walk through the creation of the infamous '[Golden Cross St
 **pseudo-code**  
 > IF the simple moving average (SMA) of the 'investment' in a 10 period timespan just moved up and crossed over the simple moving average (SMA) of the 20 period timespan THEN BUY the 'investment'. Set a stop loss at 10% loss and a profit target of 20%.  
 
+> IF a profit target order is generated in addition to a stop loss order, they are submitted as OCO (one cancels other).  
+
 
 ## Table Of Conents  
 1. [Getting Started](#getting-started)  
@@ -111,10 +113,28 @@ Whenever ever the candle closes.
  
 
 **Set Stop Loss Method**  
-We will start by defining the stop loss and profit target. At the time of this writting we choose to execute these in the 
-```C#
-```
+We will start by defining the stop loss and profit target. At the time of this writting we choose to execute these globablly rather than executing them on a per trade bases.
+```C#  
+// ...
+else if (State == State.Configure)
+{
 
+    /*
+    STOP LOSS  
+    Setting the stop loss for positions globally.
+
+    Syntax
+    - SetStopLoss( CalculationMode mode, double value )
+    - SetProfitTarget( CalculationMode mode, double value )
+    */
+    SetStopLoss( CalculationMode.Percent, .3 );
+    SetProfitTarget( CalculationMode.Percent, .2 );
+
+}
+// ...
+```
+See more about the '**SetStopLoss**' method in the NinjaTrader documentation. Visit [SetStopLoss](https://ninjatrader.com/support/helpGuides/nt8/setstoploss.htm).  
+See more about the '**SetProfitTarget**' method in the NinjaTrader documentation. Visit [SetProfitTarget](https://ninjatrader.com/support/helpGuides/nt8/setprofittarget.htm).  
 
 [Go Back To The Table Of Contents...](#strategy--the-golden-cross)  
 
