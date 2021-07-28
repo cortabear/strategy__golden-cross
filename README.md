@@ -216,16 +216,45 @@ See more about the '**Moving Average - Simple (SMA)**' calculation in the NinjaT
 ### Strategy Analyzer 
 Now that we have our golden cross strategy coded and compiled its time to backtest it against historical stack data to see how well it preforms.  
   
-First we want to make sure we are connected to data.  
-
 First step is to launch the [Strategy Analzyer](#) from NinjaTrader's control panel. The strategy analyzer houses the backtester, forward tester and optimizer. Go to "New > Strategy Analyzer".  
 ![NinjaTrader 8 Strategy Analyzer](_assests/imgs/img-0006__open-strategy-analyzer.png)   
 
+Next we want to make sure we are connected to data. [Kinetick](#) is a data feed provider that provides historical stack feed data.  
   
-For this demo we will be back testing our stratgy against the [T-Bond](https://www.cmegroup.com/trading/interest-rates/basics-of-us-treasury-futures.html) (ZB-MM-YY) futures financial derivative instrument.
+To connect to data go to the control center panel and click on "Connections > Kinetick - End Of Day (Free)".  
+![NinjaTrader 8 Strategy Analyzer](_assests/imgs/img-0007__kinetick-data-connect.png)  
+  
+For this demo we will be back testing our stratgy against the [T-Bond](https://www.cmegroup.com/trading/interest-rates/basics-of-us-treasury-futures.html) (ZB-MM-YY) futures financial derivative instrument.  
 ![NinjaTrader 8 Selecting Instrument](_assests/imgs/img-0007__select-instrument.png)   
+**Settings**  
+These are the properties we set for our backtest. Feel free to change as you need.  
+**Backtest Type**: 'Backtest'    
+**Strategy**: 'DemoGoldenCrossStrategy'  
+  
+**Instrument**: 'ZB MM-YY'  
+**Price Based On**: 'Backtest'  
+**Type**: 'Day'  
+**Value**: '1'  
+  
+**Start Date**: '(1 year ago...)'  
+**End Date**: '(Today)'  
+**Trading Hours**: 'Day'  
+**Break At EOD**: 'Checked'  
+  
+**Include Commission**: 'Unchecked'  
+**Maximum Bars Look Back**: '256'  
+**Bars Require To Trade**: '20'  
 
-See more about the '**Moving Average - Simple (SMA)**' calculation in the NinjaTrader documentation. Visit [Simple (SMA)](https://ninjatrader.com/support/helpGuides/nt8/moving_average_-_simple_sma.htm).
+**Order Fill Processing**: 'Standard (Fastest)'   
+**Fill Orders On Touch**: 'Unchecked'  
+**Slippage**: '0'   
+  
+**Entries Per Direction**: '1'  
+**Entry Handling**: 'All Entries'  
+**Exit On Session Close**: 'Checked'  
+  
+**Set Order Quantity**: 'Strategy'  
+**Time In Force**: 'GTC'  
 
 [Go Back To The Table Of Contents...](#strategy--the-golden-cross) 
 
