@@ -225,7 +225,7 @@ To connect to data go to the control center panel and click on "Connections > Ki
 ![NinjaTrader 8 Strategy Analyzer](_assests/imgs/img-0007__kinetick-data-connect.png)  
   
 For this demo we will be back testing our stratgy against the [T-Bond](https://www.cmegroup.com/trading/interest-rates/basics-of-us-treasury-futures.html) (ZB-MM-YY) futures financial derivative instrument.  
-![NinjaTrader 8 Selecting Instrument](_assests/imgs/img-0007__select-instrument.png)   
+![NinjaTrader 8 Selecting Instrument](_assests/imgs/img-0008__select-instrument.png)   
 **Settings**  
 These are the properties we set for our backtest. Feel free to change as you need.  
 **Backtest Type**: 'Backtest'    
