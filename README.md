@@ -211,6 +211,24 @@ See more about the '**Moving Average - Simple (SMA)**' calculation in the NinjaT
 
 [Go Back To The Table Of Contents...](#strategy--the-golden-cross) 
 
+---  
+ 
+### Strategy Analyzer 
+Now that we have our golden cross strategy coded and compiled its time to backtest it against historical stack data to see how well it preforms.  
+  
+First we want to make sure we are connected to data.  
+
+First step is to launch the [Strategy Analzyer](#) from NinjaTrader's control panel. The strategy analyzer houses the backtester, forward tester and optimizer. Go to "New > Strategy Analyzer".  
+![NinjaTrader 8 Strategy Analyzer](_assests/imgs/img-0006__open-strategy-analyzer.png)   
+
+  
+For this demo we will be back testing our stratgy against the [T-Bond](https://www.cmegroup.com/trading/interest-rates/basics-of-us-treasury-futures.html) (ZB-MM-YY) futures financial derivative instrument.
+![NinjaTrader 8 Selecting Instrument](_assests/imgs/img-0007__select-instrument.png)   
+
+See more about the '**Moving Average - Simple (SMA)**' calculation in the NinjaTrader documentation. Visit [Simple (SMA)](https://ninjatrader.com/support/helpGuides/nt8/moving_average_-_simple_sma.htm).
+
+[Go Back To The Table Of Contents...](#strategy--the-golden-cross) 
+
 --- 
 
 ## Resources  
